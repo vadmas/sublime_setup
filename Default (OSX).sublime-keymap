@@ -1,0 +1,168 @@
+  [   
+	 {
+    "keys": ["ctrl+command+o"], 
+    "command": "delete_blank_lines",
+    "args": { "surplus": true }
+  	},
+
+	 {
+    "keys": ["ctrl+command+k"],
+    "command": "delete_word",
+    "args": { "forward": true, "sub_words": true }
+  	},
+
+    { 
+    "keys": ["ctrl+command+r"],
+    "command": "reindent",
+    "args": {}
+    },   
+    { "keys": ["super+shift+r"], 
+     "command": "goto_symbol_in_project" 
+    },
+    // Replace in selection
+    // { 
+    // "keys": ["command+shift+r"],
+    // "command": "run_multiple_commands",
+    // "args": {
+    //   "commands": [
+    //     {"command": "find_under_expand", "context": "window"},
+    //     {"command": "slurp_find_string", "context": "window"},
+    //     {"command": "show_panel", "args": {"panel": "replace"}, "context": "window"},
+    //     {"command": "toggle_in_selection","context": "window"},
+        
+    //   ]}
+    // },
+    { 
+    "keys": ["ctrl+super+l"],
+    "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        {"command": "toggle_side_bar","context": "window"},
+        {"command": "toggle_minimap","context": "window"}
+      ]}
+    },
+    {
+     "keys":["super+l"],
+     "command":"toggle_side_bar",
+     "args":{}
+     },
+
+    { 
+    "keys": ["super+f"], 
+    "command": "show_panel", 
+    "args": {"panel": "find"},
+    "context":[{ "key": "panel_visible", "operator": "equal", "operand": false }]
+    },
+    
+    { 
+    "keys": ["super+f"],
+    "command": "hide_panel",
+    "args": {"cancel": true},
+    "context":[{ "key": "panel_visible", "operator": "equal", "operand": true }]
+    },
+
+    {
+    "keys": ["alt+t"],
+    "command": "toggle_word",
+    "args":{}
+    },
+
+    { 
+     "keys": ["ctrl+left"], 
+     "command": "move", 
+     "args": {"by": "subwords", "forward": false} 
+    },
+
+    { 
+     "keys": ["ctrl+right"], 
+     "command": "move", 
+     "args": {"by": "subword_ends", "forward": true} 
+    },
+
+    { "keys": ["super+shift+i"], "command": "noop"},
+    { "keys": ["super+shift+a"], "command": "alignment"},
+  
+    { "keys": ["ctrl+option+d"], "command": "goto_definition"},
+
+    { "keys": ["ctrl+s"], 
+      "command": "toggle_in_selection",
+      "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+    },
+
+    { "keys": ["ctrl+command+left"],  "command": "move_text_left" },
+    { "keys": ["ctrl+command+right"], "command": "move_text_right" },
+    { "keys": ["ctrl+command+up"],    "command": "move_text_up" },
+    { "keys": ["ctrl+command+down"],  "command": "move_text_down" },
+    { "keys": ["super+shift+i"],      "command": "show_panel", "args": {"panel": "incremental_find", "reverse":true} },
+    { "keys": ["ctrl+command+shift+g"], "command": "gmail" },
+      
+    { "keys": ["super+period"], "command": "set_mark" },
+
+    { "keys": ["command+shift+semicolon"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+    { "keys": ["option+up"],   "command": "move", "args": {"by": "pages", "forward": false} },
+    { "keys": ["option+down"], "command": "move", "args": {"by": "pages", "forward": true} },
+    { "keys": ["shift+command+m"], "command": "goto_definition" },
+    { "keys": ["ctrl+shift+x"], "command": "expand_selection_to_whitespace" },
+
+    { "keys": ["super+k", "super+l"], "command": "next_bookmark" },
+    { "keys": ["super+shift+k", "super+shift+l"], "command": "prev_bookmark" },
+    { "keys": ["super+k", "super+j"], "command": "toggle_bookmark" },
+    { "keys": ["super+k", "super+c"], "command": "clear_bookmarks" },
+    { "keys": ["super+shift+k", "super+shift+c"], "command": "select_all_bookmarks" },
+
+    { "keys": ["super+k", "super+u"], "command": "upper_case" },
+
+    // Map Oragami hotkeys to TMUX hotkeys
+    { "keys": ["ctrl+b", "k"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+b", "l"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+b", "j"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+b", "h"], "command": "travel_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+b", "shift+k"], "command": "carry_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+b", "shift+l"], "command": "carry_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+b", "shift+j"], "command": "carry_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+b", "shift+h"], "command": "carry_file_to_pane", "args": {"direction": "left"} },
+
+    { "keys": ["ctrl+b", "alt+k"], "command": "clone_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+b", "alt+l"], "command": "clone_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+b", "alt+j"], "command": "clone_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+b", "alt+h"], "command": "clone_file_to_pane", "args": {"direction": "left"} },
+    // You can also create the pane automatically with the following command (insert empty parameters):
+    // { "keys": [], "command": "create_pane_with_cloned_file", "args": {"direction": ""} }
+
+    { "keys": ["ctrl+b", "ctrl+k"], "command": "create_pane", "args": {"direction": "up", "give_focus": true} },
+    { "keys": ["ctrl+b", "ctrl+l"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
+    { "keys": ["ctrl+b", "ctrl+j"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
+    { "keys": ["ctrl+b", "ctrl+h"], "command": "create_pane", "args": {"direction": "left", "give_focus": true} },
+    // You can also add  "give_focus": true to automatically focus on the new pane as follows:
+    // { "keys": [], "command": "create_pane", "args": {"direction": "", "give_focus": true} }
+
+    { "keys": ["ctrl+b", "ctrl+shift+k"], "command": "destroy_pane", "args": {"direction": "up"} },
+    { "keys": ["ctrl+b", "ctrl+shift+l"], "command": "destroy_pane", "args": {"direction": "right"} },
+    { "keys": ["ctrl+b", "ctrl+shift+j"], "command": "destroy_pane", "args": {"direction": "down"} },
+    { "keys": ["ctrl+b", "ctrl+shift+h"], "command": "destroy_pane", "args": {"direction": "left"} },
+    // You can also destroy the current pane by binding the following command:
+    // { "keys": [], "command": "destroy_pane", "args": {"direction": "self"} },
+
+    { "keys": ["ctrl+b", "ctrl+alt+k"], "command": "create_pane_with_file", "args": {"direction": "up"} },
+    { "keys": ["ctrl+b", "ctrl+alt+l"], "command": "create_pane_with_file", "args": {"direction": "right"} },
+    { "keys": ["ctrl+b", "ctrl+alt+j"], "command": "create_pane_with_file", "args": {"direction": "down"} },
+    { "keys": ["ctrl+b", "ctrl+alt+h"], "command": "create_pane_with_file", "args": {"direction": "left"} },
+
+
+    // You can pull a file from another pane by binding the following command:
+    // { "keys": [], "command": "pull_file_from_pane", "args": { "direction": ""} }
+
+    { "keys": ["ctrl+b", "ctrl+z"], "command": "zoom_pane", "args": {"fraction": 0.9} },
+    { "keys": ["ctrl+b", "ctrl+shift+z"], "command": "unzoom_pane", "args": {} },
+
+    { "keys": ["ctrl+b", "ctrl+c"], "command": "resize_pane", "args": {"orientation": "cols"} },
+    { "keys": ["ctrl+b", "super+r"], "command": "resize_pane", "args": {"orientation": "rows"} },
+
+    { "keys": ["super+shift+."], "command": "run_existing_window_command", "args":
+    {
+    "id": "repl_python_run",
+    "file": "config/Python/Main.sublime-menu"
+    }}
+]

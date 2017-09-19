@@ -1,0 +1,21 @@
+[
+    {
+        "caption": "SublimeREPL: Matlab",
+        "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_matlab",
+            "file": "config/Matlab/Main.sublime-menu"
+        },
+        "repl_view_settings": {
+			"translate_tabs_to_spaces": false,
+			"auto_indent": true,
+			"smart_indent": true,
+			"spell_check": false,
+			"indent_subsequent_lines": false,
+			"detect_indentation": false,
+			"auto_complete": false,
+			"line_numbers": true,
+			"gutter": true
+			},
+    }
+]

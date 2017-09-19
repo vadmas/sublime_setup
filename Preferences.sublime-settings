@@ -1,0 +1,82 @@
+{
+	"added_words":
+	[
+		"colour",
+		"coloured",
+		"dropdown",
+		"blog",
+		"euthanized"
+	],
+	"always_show_minimap_viewport": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
+	"bold_folder_labels": true,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"email_account_default_identities":
+	[
+		"Vaden Masrani <vadmas@gmail.com>"
+	],
+	"email_account_default_identity": "\"Vaden Masrani <vadmas@gmail.com>\"",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.ipynb"
+	],
+	"font_size": 15,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Anaconda",
+		"Browser Refresh",
+		"D3.js Snippets",
+		"HTMLBeautify",
+		"jQuery Snippets pack",
+		"JSHint",
+		"KeybindingHelper",
+		"Markdown",
+		"Markdown Extended",
+		"SideBarEnhancements",
+		"SVG-Snippets",
+		"Trimmer",
+		"Vintage"
+	],
+	"index_files": true,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"soda_folder_icons": true,
+	"spell_check": true,
+	"tab_size": 4,
+	"theme": "Material-Theme.sublime-theme",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+}

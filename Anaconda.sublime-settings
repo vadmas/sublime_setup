@@ -1,0 +1,40 @@
+{
+	"anaconda_linter_mark_style": "none",
+	"anaconda_linter_underlines": "true",
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python - string - comment - constant.numeric"
+		}
+	],
+	"auto_formatting_timeout": 30,
+	"autoformat_ignore":
+	[
+		"E309",
+		"E221"
+		// "E226"
+	],
+	"display_signatures": "false",
+	"enable_docstrings_tooltip": "false",
+	"enable_signatures_tooltip": false,
+	"pep257_ignore":
+	[
+		"D203",
+		"D209",
+		"E229"
+	],
+	"pep8_ignore":
+	[
+		"E501",
+		"W291",
+		"W293",
+		"W191",
+		"E221",
+		"E231",
+		"E229",
+		"E261"
+	],
+	"pep8_max_line_length": 120,
+	"swallow_startup_errors": true
+}

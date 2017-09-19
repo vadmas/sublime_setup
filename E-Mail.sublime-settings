@@ -1,0 +1,7 @@
+{
+	"email_account_default_identities":
+	[
+	],
+	"email_account_default_identity": "Vaden Masrani <vadmas@gmail.com>",
+	"email_account_default_smtp": "smtp://vadmas:HalinaPohorelic123@smtp.gmail.com:587/"
+}
